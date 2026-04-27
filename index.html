@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Viral</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="hud">
+      <h1>Rolling Viral</h1>
+      <p class="tagline">Desvie, pule e sobreviva o máximo possível.</p>
+      <div class="stats">
+        <span>Pontos: <strong id="score">0</strong></span>
+        <span>Melhor: <strong id="best-score">0</strong></span>
+      </div>
+      <p class="hint">Controles: ⬅️➡️ ou A/D para lados, Espaço/⬆️ para pular.</p>
+    </main>
+
+    <section id="game-area" aria-label="Jogo de bola infinita">
+      <div id="track"></div>
+      <div id="ball" role="img" aria-label="Bola"></div>
+      <div id="lanes"></div>
+      <div id="overlay" class="overlay visible">
+        <p>Pressione <strong>Enter</strong> para começar</p>
+        <button id="start-btn">Jogar</button>
+      </div>
+    </section>
+
+    <section class="mobile-controls" aria-label="Controles mobile">
+      <button data-action="left">⬅️</button>
+      <button data-action="jump">⤒ Pular</button>
+      <button data-action="right">➡️</button>
+    </section>
+
+    <script src="game.js"></script>
+  </body>
+</html>
